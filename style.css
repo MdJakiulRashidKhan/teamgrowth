@@ -1,0 +1,53 @@
+
+.nav-link-hover:hover {
+    color: #ff4800 !important; 
+}
+.custom-card:hover {
+    background-color: #ff4800 !important;
+  }
+  
+  .custom-card:hover .icon{
+    color: white !important;
+  }
+  .custom-card:hover .bar {
+    background-color: white !important; 
+  }
+  .custom-card:hover .icon-bg {
+    background-color: white !important; 
+  }
+  
+  .custom-card:hover .custom-img {
+    content: url('https://www.teamgrowth.info/frontend/assets/images/service-white.png') !important ;
+  }  
+
+  /* placeholder */
+  .form-control.text-white::placeholder { 
+    color: white;
+    opacity: 1; 
+  }
+
+  .form-control.text-white:-ms-input-placeholder { 
+    color: white;
+  }
+
+  .form-control.text-white::-ms-input-placeholder { 
+    color: white;
+  }
+
+  /* btn  */
+  .btn-custom-outline {
+    color: #ff4800;
+    border-color: #ff4800;
+    background-color: transparent; 
+}
+
+.btn-custom-outline:hover {
+    color: #fff; 
+    background-color: #ff4800; 
+    border-color: #ff4800; 
+}
+
+
+.btn-custom-outline:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 72, 0, 0.5); 
+}
