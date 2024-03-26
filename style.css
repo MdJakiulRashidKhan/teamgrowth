@@ -51,3 +51,19 @@
 .btn-custom-outline:focus {
     box-shadow: 0 0 0 0.25rem rgba(255, 72, 0, 0.5); 
 }
+/* img  */
+.dark-img,.dark-img1,.dark-img2 {
+  filter: grayscale(100%);
+}
+.dark-img:hover{
+  filter:grayscale(0%);
+}
+/* / */
+.try:hover {
+  background-color: #ff4800; /* New background color on hover */
+}
+
+/* Remove grayscale filter on the .dark-img2 element within .item on hover */
+.try:hover .dark-img2 {
+  filter: grayscale(0%); /* Remove grayscale effect on hover */
+}
