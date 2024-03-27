@@ -36,7 +36,7 @@
 
   /* btn  */
   .btn-custom-outline {
-    color: #ff4800;
+    color: white;
     border-color: #ff4800;
     background-color: transparent; 
 }
@@ -60,10 +60,9 @@
 }
 /* / */
 .try:hover {
-  background-color: #ff4800; /* New background color on hover */
+  background-color: #ff4800; 
 }
 
-/* Remove grayscale filter on the .dark-img2 element within .item on hover */
 .try:hover .dark-img2 {
-  filter: grayscale(0%); /* Remove grayscale effect on hover */
+  filter: grayscale(0%); 
 }
