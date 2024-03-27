@@ -159,3 +159,33 @@
   position: relative;
   z-index: 1;
 }
+
+@media (max-width: 991px) {
+  .navbar {
+    justify-content: center; 
+  }
+  
+  .navbar-nav {
+    background-color: transparent !important; 
+    display: inline-flex !important; 
+    padding: 0; 
+  }
+
+  .navbar-nav  {
+    background-color: #111 !important;
+    margin: 5px; 
+    padding: 10px;
+    border-radius: 5px; 
+    color: #ffffff !important; 
+    float: right;
+   
+  }
+
+  .navbar-collapse {
+    width: 400px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px; 
+  }
+}
+
