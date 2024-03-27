@@ -1,0 +1,33 @@
+
+<!-- saved from url=(0012)about:srcdoc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Browser</title>
+<style>#animatedButton {
+  position: relative;  /* Required for background animation */
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to top, transparent 0%, red 100%);  /* Initial gradient */
+  background-repeat: no-repeat;  /* Prevent tiling */
+  color: #fff;  /* Text color */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-position 0.5s ease-in-out;  /* Smooth transition */
+}
+
+#animatedButton:hover {
+  background-position: 0 100%;  /* Move gradient up on hover */
+}
+</style></head>
+  <body>
+<button id="animatedButton">Hover Me!</button>
+
+
+  
+
+
+<style></style><script>console.log("from script file");</script></body></html>
