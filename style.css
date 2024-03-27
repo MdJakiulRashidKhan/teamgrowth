@@ -36,21 +36,59 @@
 
   /* btn  */
   .btn-custom-outline {
-    color: white;
-    border-color: #ff4800;
-    background-color: transparent; 
-}
+    font-size: 15px;
+    font-weight: 600;
+    line-height: unset;
+    text-transform: capitalize;
+    padding: 13px 32px; 
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #ff4800;
+    color: #fff;
+    display: inline-block;
+    background: transparent;
+    overflow: hidden; 
+  }
+  
+  .btn-custom-outline:before,
+  .btn-custom-outline:after {
+    content: "";
+    position: absolute;
+    background: #ff4800;
+    z-index: -1;
+    transition: .5s;
+  }
+  
+  .btn-custom-outline:before {
+    height: 100%; 
+    width: 0;
+    top: 0;
+    right: 50%; 
+  }
+  
+  .btn-custom-outline:after {
+    height: 0; 
+    width: 100%;
+    left: 50%; 
+    bottom: 0;
+  }
+  
+  .btn-custom-outline:hover:before {
+    width: 51%; 
+    transition: width .5s ease; 
+  }
+  .btn-custom-outline:hover {
+    color: #fff;
+    border: 2px solid #ff4800; 
+  }
+  
+  .btn-custom-outline:hover:after {
+    height: 100%; 
+    transition: height .5s ease .5s; 
+  }
+  
 
-.btn-custom-outline:hover {
-    color: #fff; 
-    background-color: #ff4800; 
-    border-color: #ff4800; 
-}
-
-
-.btn-custom-outline:focus {
-    box-shadow: 0 0 0 0.25rem rgba(255, 72, 0, 0.5); 
-}
 /* img  */
 .dark-img,.dark-img1,.dark-img2 {
   filter: grayscale(100%);
@@ -60,10 +98,9 @@
 }
 /* / */
 .try:hover {
-  background-color: #ff4800; /* New background color on hover */
+  background-color: #ff4800; 
 }
 
-/* Remove grayscale filter on the .dark-img2 element within .item on hover */
 .try:hover .dark-img2 {
-  filter: grayscale(0%); /* Remove grayscale effect on hover */
+  filter: grayscale(0%); 
 }
